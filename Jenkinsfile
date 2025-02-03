@@ -8,6 +8,14 @@ def fruits = [ "mango" , "orange" , "apple"  ]
 def TestStep = [:]
 
 
+properties {
+	[
+		parameters([
+			string(name:"Username" , defaultvalue:"khuma pokharel",description:"enter your name")
+		])
+	]
+}
+
 
 
 
