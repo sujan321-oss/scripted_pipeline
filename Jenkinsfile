@@ -30,7 +30,7 @@ node {
 				] ]
                       echo " printing the name " 
 
-                     echo "$map_data[0]['name']"
+                     echo "${map_data[0]['name']}"
                     
  		 }
    
