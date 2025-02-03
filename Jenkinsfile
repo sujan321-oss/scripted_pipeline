@@ -3,6 +3,13 @@
 def parmas = true 
 
 
+if (params) { 
+         echo "params is true" 
+  }
+
+
+
+
 node { 
        
       string name = "helli"
