@@ -14,7 +14,7 @@ node {
   		} 
         
        stage("mapData") { 
-        def  map_data = ["name": "khuma pokharel" , "surname": "pokharel"]
+        def  map_data = ["name": "khuma" , "surname": "pokharel"]
          echo "$map_data[name]"
          
       }    
