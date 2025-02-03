@@ -12,7 +12,13 @@ node {
                  echo "${fruits}"
  		 echo "${fruits[0]}"  
   		} 
-           
+        
+       stage("mapData") { 
+        def  map_data = ["name": "khuma pokharel" , "surname": "pokharel"]
+
+         
+      }    
+        
    
      stage("clone-repo")  {
                             echo "cloning the github"   
