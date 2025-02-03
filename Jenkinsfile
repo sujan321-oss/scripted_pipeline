@@ -18,6 +18,22 @@ node {
          echo "${map_data['name']}"
          
       }    
+
+     
+      stage("makeingcomplicatedmap") { 
+  			def map_data= [[
+				"name" : "khuma pokharel"  
+  				] 
+				,
+				 [
+ 				   "age" : 21
+				] ]
+                    
+ 		 }
+   
+
+
+
         
    
      stage("clone-repo")  {
