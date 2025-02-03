@@ -26,7 +26,7 @@ node {
 
 
 	  stage("printing the params variable"){
-		 println "${params.name}"
+		 println "${params.Username}"
 	  }
 
 	  stage("dynamically_adding_teststep"){
