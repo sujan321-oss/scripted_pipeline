@@ -4,9 +4,35 @@ def parmas = true
 
 def fruits = [ "mango" , "orange" , "apple"  ] 
 
+
+def TestStep = [:]
+
+
+
+
+
+
 node { 
        
       string name = "helli"
+
+	  stage("dynamically_adding_teststep"){
+		  echo "adding the test steps"
+		  TestStep['name'] = "khuma pokharel"
+
+		  for (int i=0;i<5;i++) { 
+			  TestStep["tasks-${i}"] = "${i}"
+		  }
+	  }
+
+	  stage("printing_dynamically_added_variable"){
+		  echo "printing dynamically added varibale" 
+		   TestStep.each{ key ,value -> println "key ${key} and value is ${value}"
+		   }
+	  }
+
+
+
       
       stage("print_fruits") {
                  echo "${fruits}"
