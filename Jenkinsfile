@@ -9,7 +9,8 @@ node {
       string name = "helli"
       
       stage("print_fruits") {
-                 echo "${fruits}"  
+                 echo "${fruits}"
+ 		 echo "${fruits[0]}"  
   		} 
            
    
