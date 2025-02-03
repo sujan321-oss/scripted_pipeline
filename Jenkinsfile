@@ -24,6 +24,11 @@ node {
        
       string name = "helli"
 
+
+	  stage("printing the params variable"){
+		 println "${params.name}"
+	  }
+
 	  stage("dynamically_adding_teststep"){
 		  echo "adding the test steps"
 		  TestStep['name'] = "khuma pokharel"
