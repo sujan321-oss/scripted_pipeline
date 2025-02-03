@@ -1,4 +1,8 @@
 
+
+def parmas = true 
+
+
 node { 
        
       string name = "helli"
@@ -10,8 +14,10 @@ node {
 
  			} 
       
-	stage("productionize") {
-              echo "productionize the application " 
+	stage("productionize") { 
+  
+               echo "productionize the application "
+  		echo "$parmas" 
             } 
 
         
